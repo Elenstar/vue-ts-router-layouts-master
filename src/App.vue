@@ -1,10 +1,18 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Главная</router-link> |
+    <router-link to="/about">О нас</router-link> |
+    <router-link to="/auth">Авторизация</router-link>
   </nav>
-  <router-view/>
+  <main>
+    <AppLayout />
+  </main>
 </template>
+
+<script lang="ts" setup>
+import AppLayout from '@/layouts/AppLayout.vue'
+
+</script>
 
 <style lang="scss">
 #app {
